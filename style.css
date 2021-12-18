@@ -158,6 +158,9 @@ section {
   .hero-content {
     padding: 20px 30px;
   }
+  .hero-content p {
+    display: none;
+  }
 
   .fifth-section .container {
     display: flex;
