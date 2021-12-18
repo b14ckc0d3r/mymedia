@@ -44,3 +44,36 @@ body {
         display: inline-block;
     }
 }
+.my{
+    height: 100vh;
+}
+.slika{
+    background-image: url("assets/images/main.png");
+    height: 100%;
+}
+.text2{
+    margin-left: 12%;
+    
+}
+.inside-pic{
+    margin-top: 20px;
+}
+.clearboth{
+    clear: both;
+}
+button{
+    
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.slika3{
+    background-image: url(/assets/images/entertainment.png);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slika4{
+    background-image: url(/assets/images/gift-cards.png);
+    height: 10%;
+}
