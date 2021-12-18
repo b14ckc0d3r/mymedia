@@ -1,0 +1,46 @@
+:root {
+    --body-background: #252529;
+    --white-color: #fff;
+    --navigation-color: #eee;
+    --dark-color: #333;
+    --small-device: 576px;
+    --font: 'PT Sans', sans-serif;
+    --main-backdrop: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    color: var(--white-color);
+    background-color: var(--body-background);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-light {
+    color: var(--dark-color);
+}
+
+.burger {
+    width: 40px;
+    height: 40px;
+    transform: rotate(90deg);
+    display: none;
+}
+
+.burger:after {
+    content: "|||";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+}
+
+@media screen and (max-width: var(--small-device)) {
+    .burger {
+        display: inline-block;
+    }
+}
