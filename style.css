@@ -1,46 +1,210 @@
 :root {
-    --body-background: #252529;
-    --white-color: #fff;
-    --navigation-color: #eee;
-    --dark-color: #333;
-    --small-device: 576px;
-    --font: 'PT Sans', sans-serif;
-    --main-backdrop: rgba(0, 0, 0, 0.5);
+  --body-background: #252529;
+  --white-color: #fff;
+  --navigation-color: #eee;
+  --dark-color: #333;
+  --small-device: 576px;
+  --font: "PT Sans", sans-serif;
+  --main-backdrop: rgba(0, 0, 0, 0.5);
 }
 
 body {
-    margin: 0;
-    font-family: var(--font);
-    color: var(--white-color);
-    background-color: var(--body-background);
+  margin: 0;
+  font-family: var(--font);
+  color: var(--white-color);
+  background-color: var(--body-background);
+}
+a {
+  font-size: 24px;
+  color: lightblue;
+  cursor: pointer;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .bg-light {
-    color: var(--dark-color);
+  color: var(--dark-color);
 }
 
 .burger {
-    width: 40px;
-    height: 40px;
-    transform: rotate(90deg);
-    display: none;
+  width: 40px;
+  height: 40px;
+  transform: rotate(90deg);
+  display: none;
 }
 
 .burger:after {
-    content: "|||";
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 8px;
-    left: 12px;
+  content: "|||";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
 }
 
+.mainDiv {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  cursor: pointer;
+  display: flex;
+  padding: 14px;
+  width: 100%;
+}
+.header h2 {
+  margin-right: 30px;
+  font-size: 18px;
+}
+.mainDiv__withPicutre {
+  position: relative;
+  display: flex;
+  right: auto;
+  left: auto;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/images/main.png");
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+}
+.mainDiv__insidePicture {
+  z-index: 9999;
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.mainDiv__insidePicture h1 {
+  padding-bottom: 40px;
+}
+.mainDiv__insidePicture h3 {
+  padding-bottom: 20px;
+}
+.mainDiv__Music {
+  width: 100%;
+  height: 100vh;
+}
+.mainDiv__insideMusic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.mainDiv__Music img {
+  width: 80%;
+  height: 70%;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.mainDiv__rating {
+  width: 100%;
+  height: 100vh;
+  padding: 80px;
+  background-color: var(--white-color);
+  color: #252529;
+}
+.mainDiv__info {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.mainDiv__ratingTable {
+  width: 100%;
+}
+.mainDiv__ratingTable--header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.mainDiv__Movie--size {
+  width: 40%;
+}
+.mainDiv__Year--size {
+  width: 25%;
+}
+.mainDiv__Rating--size {
+  width: 25%;
+}
+.mainDiv__Link--size {
+  width: 10%;
+}
+.mainDiv__ratingTable--main {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+}
+.mainDiv__ratingButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.mainDiv__ratingButton button {
+  border: none;
+  width: 180px;
+  height: 60px;
+  background-color: #252529;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+.mainDiv__secontToLast {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/images/entertainment.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  right: auto;
+  left: auto;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.mainDiv__againBackground {
+  z-index: 9999;
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  padding: 40px;
+}
+.giftCards {
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  color: black;
+}
+.giftCards img {
+  width: 50%;
+  object-fit: contain;
+}
+.textImg {
+  width: 50%;
+  padding-top: 100px;
+}
+.textImg h4 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid lightgray;
+}
 @media screen and (max-width: var(--small-device)) {
-    .burger {
-        display: inline-block;
-    }
+  .burger {
+    display: inline-block;
+  }
 }
