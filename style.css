@@ -39,8 +39,122 @@ body {
     left: 12px;
 }
 
+.links{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 10px;
+}
+ .links a{
+    text-decoration: none;
+    color: white;
+}
+#overview {
+    background-image: url(assets/images/main.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.603);
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+}
+
+#music{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.music{
+    margin-top: 30px;
+    width: 80%;
+}
+
+#video{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 20px;
+}
+.video-naslov{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.table{
+    width: 90%;
+    margin: 0 auto;
+}
+.more{
+    background-color: black;
+}
+#entertainment{
+    height: 300px;
+    background-image: url(assets/images/entertainment.png);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.entertainment-text{
+    width: 80%;
+}
+
+#gift{
+    background-color: white;
+    color: black;
+    display: flex;
+    gap: 100px;
+}
+.cards{
+    width: 50%;
+}
+.gift-cards-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.redeem{
+    width: 100%;
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+    
+
 @media screen and (max-width: var(--small-device)) {
     .burger {
         display: inline-block;
+    }
+    .links{
+        display: none;
     }
 }
