@@ -13,6 +13,7 @@ body {
     font-family: var(--font);
     color: var(--white-color);
     background-color: var(--body-background);
+    position: relative;
 }
 
 * {
@@ -43,4 +44,69 @@ body {
     .burger {
         display: inline-block;
     }
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    position: absolute;
+    width: 100vw;
+    height: 10%;
+}
+
+.div1 {
+     background-image: url("assets/images/main.png");
+     background-size: cover;
+     width: 100%;
+     height: 900px;
+    
+}
+
+.div2 {
+    position: absolute;
+}
+
+.txtcenter {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5)
+    
+
+}
+
+.section1 {
+    margin: 10%;
+    text-align: center;
+}
+
+.button1 {
+    display: inline-block;
+    color: white;
+    background-color: red;
+    font-size: medium;
+    text-align: center;
+    margin:5%;
+    position: absolute;
+}
+
+.music {
+    background-image: url('assets/images/music.png');
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    margin-top: 20px;
+    
+}
+
+.div3 {
+    text-align: center;
 }
