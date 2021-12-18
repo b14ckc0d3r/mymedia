@@ -132,6 +132,7 @@ button{
     color: black;
     display: flex;
     gap: 100px;
+    padding-top: 50px;
 }
 .cards{
     width: 50%;
