@@ -44,3 +44,106 @@ body {
         display: inline-block;
     }
 }
+.container {
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px auto 50px;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+.header {
+    position: absolute;
+    background-color: #343A40;
+    width: 100%;
+    left: 0;
+    top: 0;
+    grid-area: header;
+}
+.nav-bar {
+    position: relative;
+    height: 20px;
+
+}
+.bar {
+    padding: 0 10px ;
+}
+.mymedia {
+    width: 100vw; 
+    height: 500px;
+    background-image: url(assets/images/main.png);
+    background-position: center;
+    background-size: cover;
+    grid-area: main;
+}
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    align-self: center;
+    height: 300px;
+    top: 100px;
+    width: 60vw;
+    left: 25%;
+    text-align: center;
+}
+.first {
+    font-size: 30px;
+    font-weight: bold;
+}
+.second {
+    font-size: 20px;
+}
+.music-container {
+    
+    width: 100vw;
+    
+}
+.music-title {
+    text-align: center;
+    font-size: 20px;
+}
+.explanation {
+    text-align: center;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    background-image: url(assets/images/music.png);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.button {
+    text-align: center;
+    line-height: 50%;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+}
+.third-section{
+    text-align: center;
+    width: 90vw;
+    left: 50px;
+}
+.title-third {
+    font-size: 20px;
+    font-weight: bold;
+}
+.table {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+td, th {
+    text-align: left;
+    padding: 8px;
+  }
