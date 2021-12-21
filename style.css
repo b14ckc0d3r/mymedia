@@ -23,6 +23,15 @@ body {
     color: var(--dark-color);
 }
 
+
+.nav-item {
+    color: rgb(238, 238, 238);
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
 .burger {
     width: 40px;
     height: 40px;
@@ -35,12 +44,88 @@ body {
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 8px;
-    left: 12px;
+    top: 0;
+    left: 0;
 }
 
-@media screen and (max-width: var(--small-device)) {
+.header {
+    height: 40px;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.showcase {
+    background-image: url(assets/images/main.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.section-main {
+    position: relative;
+    top: 25vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.section-main h1 {
+    font-size: 4rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+}
+
+.section {
+    text-align: center;
+    padding: 2rem 0px;
+}
+
+.section-head {
+    font-size: 2.5rem;
+}
+
+.section h3 {
+    font-size: 2rem;
+}
+
+.container > * {
+    margin: 1rem 0px;
+}
+
+#entertainment {
+    background: url(./assets/images/entertainment.png) center bottom / cover no-repeat;
+    padding: 10rem 0px;
+}
+
+@media screen and (max-width: 576px) {
     .burger {
         display: inline-block;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .hide-small {
+        display: none;
+    }
+
+    .hide-big {
+        display: inline-block;
+    }
+
+    .showcase {
+        max-height: 50vh;
+    }
+
+    .section-main {
+        top: 15vh;
     }
 }
